@@ -1,0 +1,2 @@
+/usr/bin/ar qc libutest_src.a CMakeFiles/utest_src.dir/testInput.cpp.o CMakeFiles/utest_src.dir/testPlayer.cpp.o
+/usr/bin/ranlib libutest_src.a
