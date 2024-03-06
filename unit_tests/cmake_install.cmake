@@ -1,4 +1,4 @@
-# Install script for directory: /home/adrian/hobbies/c++/games/tele/unit_tests
+# Install script for directory: /home/adrian/hobbies/c++/games/point-scoring/unit_tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/adrian/hobbies/c++/games/tele/unit_tests/testCases/cmake_install.cmake")
+  include("/home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/adrian/hobbies/c++/games/tele/unit_tests/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/adrian/hobbies/c++/games/point-scoring/unit_tests/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

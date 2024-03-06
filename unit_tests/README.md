@@ -1,6 +1,9 @@
 While setting up the unit_test CMakeLists.txt, various things remain to be
 understood completely. Things that were faced during set up:
 
+- Remember that when compiling this directory we need to do the command where
+  the CMakeLists.txt is: `cmake CMakeLists.txt`.
+
 - The package `thread` needed to be included because there was a problem when
   running `make` with the error `lpthread::thread` was not found.
 

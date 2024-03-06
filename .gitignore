@@ -1,2 +1,10 @@
 build/
+unit_tests/CMakeFiles
+unit_tests/cmake_install.cmake
+unit_tests/utest
+unit_tests/CMakeCache.txt
+unit_tests/testCases/cmake_install.cmake
+unit_tests/testCases/CMakeFiles
+unit_tests/testCases/Makefile
+
 

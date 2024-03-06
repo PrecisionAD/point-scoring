@@ -1,10 +1,10 @@
 testCases/CMakeFiles/utest_src.dir/testInput.cpp.o: \
- /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/testInput.cpp \
+ /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/testInput.cpp \
  /usr/include/stdc-predef.h \
- /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/../../Input/src/Input.cpp \
- /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/../../Input/src/../headers/Input.h \
- /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/../../Input/src/../headers/../../Game/headers/Game.h \
- /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/../../Input/src/../headers/../../Game/headers/../../Player/headers/Player.h \
+ /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/../../Input/src/Input.cpp \
+ /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/../../Input/src/../headers/Input.h \
+ /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/../../Input/src/../headers/../../Game/headers/Game.h \
+ /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/../../Input/src/../headers/../../Game/headers/../../Player/headers/Player.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -137,7 +137,7 @@ testCases/CMakeFiles/utest_src.dir/testInput.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/../../Input/src/../../Player/headers/Player.h \
+ /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/../../Input/src/../../Player/headers/Player.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \

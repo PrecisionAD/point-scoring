@@ -27,6 +27,8 @@ int main()
         {
             case 1:
                 // enter scores
+                theGame.printPlayerNames();
+                theGame.enterScores();
                 // save scores?
                 // print table
                 // print score difference

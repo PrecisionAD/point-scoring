@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/adrian/hobbies/c++/games/tele/unit_tests
+CMAKE_SOURCE_DIR = /home/adrian/hobbies/c++/games/point-scoring/unit_tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/adrian/hobbies/c++/games/tele/unit_tests
+CMAKE_BINARY_DIR = /home/adrian/hobbies/c++/games/point-scoring/unit_tests
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/hobbies/c++/games/tele/unit_tests/CMakeFiles /home/adrian/hobbies/c++/games/tele/unit_tests/testCases//CMakeFiles/progress.marks
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testCases/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/hobbies/c++/games/tele/unit_tests/CMakeFiles 0
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases//CMakeFiles/progress.marks
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testCases/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testCases/clean
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testCases/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testCases/preinstall
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testCases/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testCases/preinstall
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testCases/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 testCases/CMakeFiles/utest_src.dir/rule:
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testCases/CMakeFiles/utest_src.dir/rule
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testCases/CMakeFiles/utest_src.dir/rule
 .PHONY : testCases/CMakeFiles/utest_src.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ utest_src: testCases/CMakeFiles/utest_src.dir/rule
 
 # fast build rule for target.
 utest_src/fast:
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/build
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/build
 .PHONY : utest_src/fast
 
 testInput.o: testInput.cpp.o
@@ -135,7 +135,7 @@ testInput.o: testInput.cpp.o
 
 # target to build an object file
 testInput.cpp.o:
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/testInput.cpp.o
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/testInput.cpp.o
 .PHONY : testInput.cpp.o
 
 testInput.i: testInput.cpp.i
@@ -143,7 +143,7 @@ testInput.i: testInput.cpp.i
 
 # target to preprocess a source file
 testInput.cpp.i:
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/testInput.cpp.i
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/testInput.cpp.i
 .PHONY : testInput.cpp.i
 
 testInput.s: testInput.cpp.s
@@ -151,7 +151,7 @@ testInput.s: testInput.cpp.s
 
 # target to generate assembly for a file
 testInput.cpp.s:
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/testInput.cpp.s
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/testInput.cpp.s
 .PHONY : testInput.cpp.s
 
 testPlayer.o: testPlayer.cpp.o
@@ -159,7 +159,7 @@ testPlayer.o: testPlayer.cpp.o
 
 # target to build an object file
 testPlayer.cpp.o:
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/testPlayer.cpp.o
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/testPlayer.cpp.o
 .PHONY : testPlayer.cpp.o
 
 testPlayer.i: testPlayer.cpp.i
@@ -167,7 +167,7 @@ testPlayer.i: testPlayer.cpp.i
 
 # target to preprocess a source file
 testPlayer.cpp.i:
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/testPlayer.cpp.i
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/testPlayer.cpp.i
 .PHONY : testPlayer.cpp.i
 
 testPlayer.s: testPlayer.cpp.s
@@ -175,7 +175,7 @@ testPlayer.s: testPlayer.cpp.s
 
 # target to generate assembly for a file
 testPlayer.cpp.s:
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/testPlayer.cpp.s
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/testPlayer.cpp.s
 .PHONY : testPlayer.cpp.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

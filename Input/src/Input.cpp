@@ -36,13 +36,60 @@ int Input::getTotalPlayers() const
     return mTotalPlayers;
 }
 
+int Input::askOption() const
+{
+    int option{ 0 };
+    bool done{ false };
+
+    while(not done)
+    {
+        std::cout << "Option: ";
+        std::cin >> option;
+
+        if (option > 0 and option < mTotalPlayers)
+        {
+            done = true;
+        }
+        else
+        {
+            std::cout << "Oops! Try again!" << "\n";
+        }
+    }
+
+    return option;
+}
+
+int Input::askPoints() const
+{
+    int const maxPoints{ 1000 };
+    int points{ -1 };
+    bool done{ false };
+
+    while (not done)
+    {
+        std::cout << "How many points for the player? ";
+        std::cin >> points;
+
+        if (points > -1 and points < maxPoints)
+        {
+            return points;
+        }
+        else
+        {
+            std::cout << "Points don't seem right..." << "\n";
+        }
+    }
+
+    return points;
+}
+
+
 void Input::askNames(Game& currentGameIn) const
 {
     int index{ 1 };
     int totalPlayers{ currentGameIn.getTotalPlayers() };
     std::string name{};
 
-    std::cout << "totalPlayers " << totalPlayers << "\n";
     while (totalPlayers > 0)
     {
         Player currentPlayer{};
@@ -55,10 +102,6 @@ void Input::askNames(Game& currentGameIn) const
         name.clear();
     }
 }
-
-
-
-
 
 
 

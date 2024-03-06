@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/adrian/hobbies/c++/games/tele/unit_tests
+CMAKE_SOURCE_DIR = /home/adrian/hobbies/c++/games/point-scoring/unit_tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/adrian/hobbies/c++/games/tele/unit_tests
+CMAKE_BINARY_DIR = /home/adrian/hobbies/c++/games/point-scoring/unit_tests
 
 # Include any dependencies generated for this target.
 include CMakeFiles/utest.dir/depend.make
@@ -72,44 +72,44 @@ include CMakeFiles/utest.dir/flags.make
 CMakeFiles/utest.dir/testCases/testInput.cpp.o: CMakeFiles/utest.dir/flags.make
 CMakeFiles/utest.dir/testCases/testInput.cpp.o: testCases/testInput.cpp
 CMakeFiles/utest.dir/testCases/testInput.cpp.o: CMakeFiles/utest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/hobbies/c++/games/tele/unit_tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/utest.dir/testCases/testInput.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/utest.dir/testCases/testInput.cpp.o -MF CMakeFiles/utest.dir/testCases/testInput.cpp.o.d -o CMakeFiles/utest.dir/testCases/testInput.cpp.o -c /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/testInput.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/utest.dir/testCases/testInput.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/utest.dir/testCases/testInput.cpp.o -MF CMakeFiles/utest.dir/testCases/testInput.cpp.o.d -o CMakeFiles/utest.dir/testCases/testInput.cpp.o -c /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/testInput.cpp
 
 CMakeFiles/utest.dir/testCases/testInput.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utest.dir/testCases/testInput.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/testInput.cpp > CMakeFiles/utest.dir/testCases/testInput.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/testInput.cpp > CMakeFiles/utest.dir/testCases/testInput.cpp.i
 
 CMakeFiles/utest.dir/testCases/testInput.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utest.dir/testCases/testInput.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/testInput.cpp -o CMakeFiles/utest.dir/testCases/testInput.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/testInput.cpp -o CMakeFiles/utest.dir/testCases/testInput.cpp.s
 
 CMakeFiles/utest.dir/testCases/testPlayer.cpp.o: CMakeFiles/utest.dir/flags.make
 CMakeFiles/utest.dir/testCases/testPlayer.cpp.o: testCases/testPlayer.cpp
 CMakeFiles/utest.dir/testCases/testPlayer.cpp.o: CMakeFiles/utest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/hobbies/c++/games/tele/unit_tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/utest.dir/testCases/testPlayer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/utest.dir/testCases/testPlayer.cpp.o -MF CMakeFiles/utest.dir/testCases/testPlayer.cpp.o.d -o CMakeFiles/utest.dir/testCases/testPlayer.cpp.o -c /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/testPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/utest.dir/testCases/testPlayer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/utest.dir/testCases/testPlayer.cpp.o -MF CMakeFiles/utest.dir/testCases/testPlayer.cpp.o.d -o CMakeFiles/utest.dir/testCases/testPlayer.cpp.o -c /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/testPlayer.cpp
 
 CMakeFiles/utest.dir/testCases/testPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utest.dir/testCases/testPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/testPlayer.cpp > CMakeFiles/utest.dir/testCases/testPlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/testPlayer.cpp > CMakeFiles/utest.dir/testCases/testPlayer.cpp.i
 
 CMakeFiles/utest.dir/testCases/testPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utest.dir/testCases/testPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/testPlayer.cpp -o CMakeFiles/utest.dir/testCases/testPlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/testPlayer.cpp -o CMakeFiles/utest.dir/testCases/testPlayer.cpp.s
 
 CMakeFiles/utest.dir/testCases/testGame.cpp.o: CMakeFiles/utest.dir/flags.make
 CMakeFiles/utest.dir/testCases/testGame.cpp.o: testCases/testGame.cpp
 CMakeFiles/utest.dir/testCases/testGame.cpp.o: CMakeFiles/utest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/hobbies/c++/games/tele/unit_tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/utest.dir/testCases/testGame.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/utest.dir/testCases/testGame.cpp.o -MF CMakeFiles/utest.dir/testCases/testGame.cpp.o.d -o CMakeFiles/utest.dir/testCases/testGame.cpp.o -c /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/testGame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/utest.dir/testCases/testGame.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/utest.dir/testCases/testGame.cpp.o -MF CMakeFiles/utest.dir/testCases/testGame.cpp.o.d -o CMakeFiles/utest.dir/testCases/testGame.cpp.o -c /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/testGame.cpp
 
 CMakeFiles/utest.dir/testCases/testGame.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utest.dir/testCases/testGame.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/testGame.cpp > CMakeFiles/utest.dir/testCases/testGame.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/testGame.cpp > CMakeFiles/utest.dir/testCases/testGame.cpp.i
 
 CMakeFiles/utest.dir/testCases/testGame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utest.dir/testCases/testGame.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/testGame.cpp -o CMakeFiles/utest.dir/testCases/testGame.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/testGame.cpp -o CMakeFiles/utest.dir/testCases/testGame.cpp.s
 
 # Object files for target utest
 utest_OBJECTS = \
@@ -127,7 +127,7 @@ utest: CMakeFiles/utest.dir/build.make
 utest: /usr/lib/x86_64-linux-gnu/libgtest.a
 utest: testCases/libutest_src.a
 utest: CMakeFiles/utest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adrian/hobbies/c++/games/tele/unit_tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable utest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable utest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/utest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -139,6 +139,6 @@ CMakeFiles/utest.dir/clean:
 .PHONY : CMakeFiles/utest.dir/clean
 
 CMakeFiles/utest.dir/depend:
-	cd /home/adrian/hobbies/c++/games/tele/unit_tests && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/adrian/hobbies/c++/games/tele/unit_tests /home/adrian/hobbies/c++/games/tele/unit_tests /home/adrian/hobbies/c++/games/tele/unit_tests /home/adrian/hobbies/c++/games/tele/unit_tests /home/adrian/hobbies/c++/games/tele/unit_tests/CMakeFiles/utest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/adrian/hobbies/c++/games/point-scoring/unit_tests && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/adrian/hobbies/c++/games/point-scoring/unit_tests /home/adrian/hobbies/c++/games/point-scoring/unit_tests /home/adrian/hobbies/c++/games/point-scoring/unit_tests /home/adrian/hobbies/c++/games/point-scoring/unit_tests /home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles/utest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/utest.dir/depend
 

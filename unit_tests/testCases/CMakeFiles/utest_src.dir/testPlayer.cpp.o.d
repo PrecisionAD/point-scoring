@@ -1,8 +1,8 @@
 testCases/CMakeFiles/utest_src.dir/testPlayer.cpp.o: \
- /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/testPlayer.cpp \
+ /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/testPlayer.cpp \
  /usr/include/stdc-predef.h \
- /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/../../Player/src/Player.cpp \
- /home/adrian/hobbies/c++/games/tele/unit_tests/testCases/../../Player/src/../headers/Player.h \
+ /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/../../Player/src/Player.cpp \
+ /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/../../Player/src/../headers/Player.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

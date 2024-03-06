@@ -3,9 +3,9 @@
 
 CMakeFiles/utest.dir/testCases/testGame.cpp.o: testCases/testGame.cpp \
   /usr/include/stdc-predef.h \
-  /home/adrian/hobbies/c++/games/tele/Game/src/Game.cpp \
-  /home/adrian/hobbies/c++/games/tele/Game/headers/Game.h \
-  /home/adrian/hobbies/c++/games/tele/Player/headers/Player.h \
+  /home/adrian/hobbies/c++/games/point-scoring/Game/src/Game.cpp \
+  /home/adrian/hobbies/c++/games/point-scoring/Game/headers/Game.h \
+  /home/adrian/hobbies/c++/games/point-scoring/Player/headers/Player.h \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -160,6 +160,8 @@ CMakeFiles/utest.dir/testCases/testGame.cpp.o: testCases/testGame.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /home/adrian/hobbies/c++/games/point-scoring/Input/headers/Input.h \
+  /home/adrian/hobbies/c++/games/point-scoring/Game/headers/Game.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -189,30 +191,45 @@ CMakeFiles/utest.dir/testCases/testGame.cpp.o: testCases/testGame.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /usr/include/c++/11/memory \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
-  /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/refwrap.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
-  /usr/include/c++/11/pstl/execution_defs.h \
   /usr/include/gtest/gtest.h \
   /usr/include/c++/11/cstddef \
   /usr/include/c++/11/limits \
@@ -262,7 +279,6 @@ CMakeFiles/utest.dir/testCases/testGame.cpp.o: testCases/testGame.cpp \
   /usr/include/regex.h \
   /usr/include/c++/11/any \
   /usr/include/c++/11/optional \
-  /usr/include/c++/11/bits/enable_special_members.h \
   /usr/include/c++/11/variant \
   /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/x86_64-linux-gnu/sys/wait.h \
@@ -295,10 +311,8 @@ CMakeFiles/utest.dir/testCases/testGame.cpp.o: testCases/testGame.cpp \
   /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
-  /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/set \
   /usr/include/c++/11/bits/stl_set.h \
   /usr/include/c++/11/bits/stl_multiset.h \
@@ -313,16 +327,6 @@ CMakeFiles/utest.dir/testCases/testGame.cpp.o: testCases/testGame.cpp \
   /usr/include/gtest/gtest-matchers.h \
   /usr/include/c++/11/atomic \
   /usr/include/gtest/gtest-printers.h \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/gtest/internal/custom/gtest-printers.h \
   /usr/include/gtest/gtest-param-test.h \
   /usr/include/c++/11/iterator \
@@ -337,10 +341,10 @@ CMakeFiles/utest.dir/testCases/testGame.cpp.o: testCases/testGame.cpp \
 
 CMakeFiles/utest.dir/testCases/testInput.cpp.o: testCases/testInput.cpp \
   /usr/include/stdc-predef.h \
-  /home/adrian/hobbies/c++/games/tele/Input/src/Input.cpp \
-  /home/adrian/hobbies/c++/games/tele/Input/headers/Input.h \
-  /home/adrian/hobbies/c++/games/tele/Game/headers/Game.h \
-  /home/adrian/hobbies/c++/games/tele/Player/headers/Player.h \
+  /home/adrian/hobbies/c++/games/point-scoring/Input/src/Input.cpp \
+  /home/adrian/hobbies/c++/games/point-scoring/Input/headers/Input.h \
+  /home/adrian/hobbies/c++/games/point-scoring/Game/headers/Game.h \
+  /home/adrian/hobbies/c++/games/point-scoring/Player/headers/Player.h \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -495,7 +499,7 @@ CMakeFiles/utest.dir/testCases/testInput.cpp.o: testCases/testInput.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  /home/adrian/hobbies/c++/games/tele/Player/headers/Player.h \
+  /home/adrian/hobbies/c++/games/point-scoring/Player/headers/Player.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -673,8 +677,8 @@ CMakeFiles/utest.dir/testCases/testInput.cpp.o: testCases/testInput.cpp \
 
 CMakeFiles/utest.dir/testCases/testPlayer.cpp.o: testCases/testPlayer.cpp \
   /usr/include/stdc-predef.h \
-  /home/adrian/hobbies/c++/games/tele/Player/src/Player.cpp \
-  /home/adrian/hobbies/c++/games/tele/Player/headers/Player.h \
+  /home/adrian/hobbies/c++/games/point-scoring/Player/src/Player.cpp \
+  /home/adrian/hobbies/c++/games/point-scoring/Player/headers/Player.h \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -1007,10 +1011,6 @@ CMakeFiles/utest.dir/testCases/testPlayer.cpp.o: testCases/testPlayer.cpp \
 
 testCases/testPlayer.cpp:
 
-/home/adrian/hobbies/c++/games/tele/Input/headers/Input.h:
-
-/home/adrian/hobbies/c++/games/tele/Input/src/Input.cpp:
-
 testCases/testInput.cpp:
 
 /usr/include/gtest/gtest_pred_impl.h:
@@ -1026,12 +1026,6 @@ testCases/testInput.cpp:
 /usr/include/gtest/gtest-param-test.h:
 
 /usr/include/gtest/internal/custom/gtest-printers.h:
-
-/usr/include/c++/11/bits/unordered_map.h:
-
-/usr/include/c++/11/bits/hashtable.h:
-
-/usr/include/c++/11/unordered_map:
 
 /usr/include/gtest/gtest-printers.h:
 
@@ -1064,8 +1058,6 @@ testCases/testInput.cpp:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
 
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
-
-/home/adrian/hobbies/c++/games/tele/Player/src/Player.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
@@ -1109,6 +1101,30 @@ testCases/testInput.cpp:
 
 /usr/include/linux/close_range.h:
 
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/gtest/internal/custom/gtest-port.h:
+
+/usr/include/c++/11/bits/locale_conv.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
+
+/usr/include/libintl.h:
+
+/usr/include/c++/11/cxxabi.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
+
+/usr/include/c++/11/ctime:
+
 /usr/include/stdlib.h:
 
 /usr/include/c++/11/bits/string_view.tcc:
@@ -1116,8 +1132,6 @@ testCases/testInput.cpp:
 /usr/include/c++/11/bits/functional_hash.h:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
@@ -1147,8 +1161,6 @@ testCases/testInput.cpp:
 
 /usr/include/c++/11/bits/stl_pair.h:
 
-/usr/include/c++/11/bits/locale_facets_nonio.tcc:
-
 /usr/include/pthread.h:
 
 /usr/include/gtest/gtest_prod.h:
@@ -1156,10 +1168,6 @@ testCases/testInput.cpp:
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
 /usr/include/c++/11/ext/concurrence.h:
-
-/usr/include/c++/11/bits/shared_ptr_base.h:
-
-/usr/include/c++/11/bits/basic_string.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
@@ -1169,17 +1177,13 @@ testCases/testInput.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
-/usr/include/c++/11/bits/node_handle.h:
-
-/usr/include/c++/11/iostream:
+/usr/include/c++/11/algorithm:
 
 /usr/include/c++/11/bits/stl_set.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/libintl.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
@@ -1203,83 +1207,17 @@ testCases/testInput.cpp:
 
 /usr/include/c++/11/cctype:
 
+/usr/include/c++/11/unordered_map:
+
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/include/c++/11/ctime:
-
 /usr/include/asm-generic/posix_types.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
-
-/usr/include/c++/11/bits/stringfwd.h:
-
-/usr/include/c++/11/bits/stl_function.h:
-
-/usr/include/c++/11/bits/memoryfwd.h:
-
-/usr/include/gtest/gtest.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/11/bits/alloc_traits.h:
-
-/usr/include/c++/11/pstl/pstl_config.h:
-
-/usr/include/c++/11/bits/allocator.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/c++/11/bits/hash_bytes.h:
-
-/usr/include/c++/11/bits/move.h:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/c++/11/type_traits:
-
-/usr/include/c++/11/tuple:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/c++/11/string:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-testCases/testGame.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/c++/11/bits/ostream_insert.h:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/x86_64-linux-gnu/sys/stat.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/usr/include/c++/11/bits/cpp_type_traits.h:
-
-/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/11/ext/alloc_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/c++/11/cstdint:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/c++/11/bits/postypes.h:
 
@@ -1311,6 +1249,16 @@ testCases/testGame.cpp:
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
 
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/c++/11/bits/exception_defines.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/usr/include/c++/11/pstl/pstl_config.h:
+
+/usr/include/c++/11/bits/allocator.h:
+
 /usr/include/c++/11/bits/char_traits.h:
 
 /usr/include/x86_64-linux-gnu/sys/wait.h:
@@ -1327,29 +1275,77 @@ testCases/testGame.cpp:
 
 /usr/include/features.h:
 
+/usr/include/c++/11/bits/stringfwd.h:
+
+/usr/include/c++/11/bits/stl_function.h:
+
+/usr/include/c++/11/bits/memoryfwd.h:
+
+/usr/include/gtest/gtest.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
-/home/adrian/hobbies/c++/games/tele/Player/headers/Player.h:
+/home/adrian/hobbies/c++/games/point-scoring/Player/headers/Player.h:
 
-/usr/include/wchar.h:
+/usr/include/c++/11/limits:
 
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
+/usr/include/stdc-predef.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+/usr/include/c++/11/bits/alloc_traits.h:
 
-/usr/include/x86_64-linux-gnu/asm/errno.h:
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+/usr/include/c++/11/bits/hash_bytes.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/c++/11/bits/move.h:
 
-/usr/include/c++/11/bits/algorithmfwd.h:
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
-/usr/include/c++/11/pstl/execution_defs.h:
+/usr/include/c++/11/type_traits:
 
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+/usr/include/c++/11/tuple:
 
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/c++/11/string:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/home/adrian/hobbies/c++/games/point-scoring/Input/src/Input.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/c++/11/bits/ostream_insert.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/x86_64-linux-gnu/sys/stat.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/c++/11/iostream:
+
+/usr/include/c++/11/bits/node_handle.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/home/adrian/hobbies/c++/games/point-scoring/Game/headers/Game.h:
+
+/usr/include/c++/11/bits/stl_uninitialized.h:
+
+/usr/include/c++/11/backward/auto_ptr.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
@@ -1359,9 +1355,7 @@ testCases/testGame.cpp:
 
 /usr/include/linux/errno.h:
 
-/usr/include/ctype.h:
-
-/usr/include/c++/11/locale:
+/home/adrian/hobbies/c++/games/point-scoring/Player/src/Player.cpp:
 
 /usr/include/c++/11/debug/debug.h:
 
@@ -1379,6 +1373,10 @@ testCases/testGame.cpp:
 
 /usr/include/c++/11/bits/invoke.h:
 
+testCases/testGame.cpp:
+
+/usr/include/c++/11/bits/stl_raw_storage_iter.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/c++/11/iterator:
@@ -1387,9 +1385,23 @@ testCases/testGame.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/include/c++/11/debug/assertions.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+
+/usr/include/c++/11/debug/assertions.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/home/adrian/hobbies/c++/games/point-scoring/Game/src/Game.cpp:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
@@ -1398,6 +1410,24 @@ testCases/testGame.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/c++/11/locale:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/11/bits/cpp_type_traits.h:
+
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/11/bits/unordered_map.h:
+
+/usr/include/c++/11/ext/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/c++/11/cstdint:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
@@ -1419,21 +1449,15 @@ testCases/testGame.cpp:
 
 /usr/include/c++/11/bits/ostream.tcc:
 
-/usr/include/c++/11/bits/stl_algo.h:
+/usr/include/wchar.h:
 
-/usr/include/asm-generic/int-ll64.h:
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-/home/adrian/hobbies/c++/games/tele/Game/src/Game.cpp:
-
-/usr/include/c++/11/cxxabi.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
@@ -1448,14 +1472,6 @@ testCases/testGame.cpp:
 /usr/include/c++/11/bits/predefined_ops.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/c++/11/bits/erase_if.h:
-
-/usr/include/stdint.h:
-
-/usr/include/c++/11/bits/ptr_traits.h:
-
-/usr/include/endian.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -1472,10 +1488,6 @@ testCases/testGame.cpp:
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/alloca.h:
-
-/usr/include/c++/11/bits/stl_heap.h:
-
-/usr/include/c++/11/bits/std_abs.h:
 
 /usr/include/c++/11/cstdio:
 
@@ -1511,12 +1523,6 @@ testCases/testGame.cpp:
 
 /usr/include/c++/11/bits/align.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/c++/11/bits/stl_uninitialized.h:
-
-/usr/include/c++/11/backward/auto_ptr.h:
-
 /usr/include/c++/11/cstddef:
 
 /usr/include/c++/11/bits/stl_vector.h:
@@ -1530,6 +1536,14 @@ testCases/testGame.cpp:
 /usr/include/c++/11/bits/stl_bvector.h:
 
 /usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/c++/11/bits/shared_ptr_base.h:
+
+/usr/include/c++/11/bits/basic_string.h:
+
+/home/adrian/hobbies/c++/games/point-scoring/Input/headers/Input.h:
+
+/usr/include/gtest/internal/gtest-port.h:
 
 /usr/include/c++/11/ostream:
 
@@ -1563,6 +1577,8 @@ testCases/testGame.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
+/usr/include/c++/11/pstl/glue_algorithm_defs.h:
+
 /usr/include/c++/11/stdexcept:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
@@ -1583,41 +1599,55 @@ testCases/testGame.cpp:
 
 /usr/include/c++/11/bits/locale_facets.tcc:
 
-/usr/include/c++/11/bits/enable_special_members.h:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
-
 /usr/include/c++/11/istream:
 
 /usr/include/c++/11/bits/istream.tcc:
 
-/usr/include/c++/11/memory:
-
-/usr/include/c++/11/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/11/bits/uses_allocator.h:
-
 /usr/include/c++/11/bits/stl_relops.h:
 
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/c++/11/bits/stl_algo.h:
+
+/usr/include/c++/11/pstl/execution_defs.h:
+
+/usr/include/c++/11/bits/algorithmfwd.h:
+
+/usr/include/c++/11/bits/std_abs.h:
+
+/usr/include/c++/11/bits/stl_heap.h:
+
 /usr/include/c++/11/array:
+
+/usr/include/c++/11/bits/uses_allocator.h:
 
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/11/bits/refwrap.h:
 
-/usr/include/c++/11/bits/shared_ptr_atomic.h:
+/usr/include/c++/11/bits/hashtable.h:
 
-/usr/include/c++/11/limits:
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/usr/include/stdint.h:
+
+/usr/include/c++/11/bits/ptr_traits.h:
+
+/usr/include/endian.h:
+
+/usr/include/c++/11/bits/erase_if.h:
+
+/usr/include/c++/11/memory:
+
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
 
 /usr/include/gtest/gtest-test-part.h:
 
 /usr/include/gtest/internal/gtest-internal.h:
-
-/usr/include/gtest/internal/gtest-port.h:
-
-/home/adrian/hobbies/c++/games/tele/Game/headers/Game.h:
 
 /usr/include/c++/11/stdlib.h:
 
@@ -1658,25 +1688,3 @@ testCases/testGame.cpp:
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
-
-/usr/include/c++/11/bits/locale_conv.h:
-
-/usr/include/gtest/internal/custom/gtest-port.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/c++/11/bits/exception_defines.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:

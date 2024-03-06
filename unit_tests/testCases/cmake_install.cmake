@@ -1,4 +1,4 @@
-# Install script for directory: /home/adrian/hobbies/c++/games/tele/unit_tests/testCases
+# Install script for directory: /home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

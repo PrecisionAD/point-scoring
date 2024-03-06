@@ -5,20 +5,25 @@
 
 #include <vector>
 
-class Player;
+// class Player;
 
 class Game
 {
 public:
-    Game() = default;
+    Game();
     Game(int totalPlayersIn);
 
+    // Player related
     void setMaxPlayers();
     void addPlayer(Player& currentPlayerIn);
     void enterScores();
     int getTotalPlayers() const;
+
+    // Printing details
+    void printPlayerNames() const;
+    void printTable();
     int menuOption();
-    std::vector<Player> getAllPlayers();
+    std::vector<Player>& getAllPlayers();
 
 private:
     std::vector<Player> mAllPlayers;

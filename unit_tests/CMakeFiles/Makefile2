@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/adrian/hobbies/c++/games/tele/unit_tests
+CMAKE_SOURCE_DIR = /home/adrian/hobbies/c++/games/point-scoring/unit_tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/adrian/hobbies/c++/games/tele/unit_tests
+CMAKE_BINARY_DIR = /home/adrian/hobbies/c++/games/point-scoring/unit_tests
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -98,14 +98,14 @@ testCases/clean: testCases/CMakeFiles/utest_src.dir/clean
 CMakeFiles/utest.dir/all: testCases/CMakeFiles/utest_src.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/utest.dir/build.make CMakeFiles/utest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/utest.dir/build.make CMakeFiles/utest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adrian/hobbies/c++/games/tele/unit_tests/CMakeFiles --progress-num=1,2,3,4 "Built target utest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles --progress-num=1,2,3,4 "Built target utest"
 .PHONY : CMakeFiles/utest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/utest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/hobbies/c++/games/tele/unit_tests/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/utest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/hobbies/c++/games/tele/unit_tests/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles 0
 .PHONY : CMakeFiles/utest.dir/rule
 
 # Convenience name for target.
@@ -124,14 +124,14 @@ CMakeFiles/utest.dir/clean:
 testCases/CMakeFiles/utest_src.dir/all:
 	$(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/depend
 	$(MAKE) $(MAKESILENT) -f testCases/CMakeFiles/utest_src.dir/build.make testCases/CMakeFiles/utest_src.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adrian/hobbies/c++/games/tele/unit_tests/CMakeFiles --progress-num=5,6,7 "Built target utest_src"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles --progress-num=5,6,7 "Built target utest_src"
 .PHONY : testCases/CMakeFiles/utest_src.dir/all
 
 # Build rule for subdir invocation for target.
 testCases/CMakeFiles/utest_src.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/hobbies/c++/games/tele/unit_tests/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testCases/CMakeFiles/utest_src.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/hobbies/c++/games/tele/unit_tests/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles 0
 .PHONY : testCases/CMakeFiles/utest_src.dir/rule
 
 # Convenience name for target.

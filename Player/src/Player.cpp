@@ -3,13 +3,37 @@
 Player::Player() :
     mPoints{ 0 },
     mHuevos{ 0 },
-    mFlag{ false }
+    mFlag{ false },
+    mUpdated{ false }
 {}
 
+Player::Player(std::string& nameIn) :
+    mName{ std::move(nameIn) },
+    mPoints{ 0 },
+    mHuevos{ 0 },
+    mFlag{ false },
+    mUpdated{ false }
+{}
 
 void Player::setName(std::string& nameIn)
 {
     mName = std::move(nameIn);
+}
+
+
+void Player::updatePoints(int pointsIn)
+{
+    mPoints += pointsIn;
+}
+
+void Player::updateHuevos(int huevosIn)
+{
+    mHuevos = huevosIn;
+}
+
+void Player::updateFlag(bool flagIn)
+{
+    mFlag = flagIn;
 }
 
 std::string Player::getName() const
@@ -17,19 +41,9 @@ std::string Player::getName() const
     return mName;
 }
 
-void Player::setPoints(int pointsIn)
-{
-    mPoints += pointsIn;
-}
-
 int Player::getPoints() const
 {
     return mPoints;
-}
-
-void Player::setHuevos(int huevosIn)
-{
-    mHuevos = huevosIn;
 }
 
 int Player::getHuevos() const
@@ -37,16 +51,15 @@ int Player::getHuevos() const
     return mHuevos;
 }
 
-void Player::setFlag(bool flagIn)
-{
-    mFlag = flagIn;
-}
-
 bool Player::getFlag() const
 {
     return mFlag;
 }
 
+bool Player::getUpdated() const
+{
+    return mUpdated;
+}
 
 
 

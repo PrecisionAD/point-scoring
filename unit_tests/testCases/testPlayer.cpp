@@ -40,15 +40,15 @@ TEST_F(TestPlayer, ConstructPlayerTest)
     EXPECT_STREQ("john", getPlayer()->getName().c_str());
 
     unsigned const points{ 10 };
-    getPlayer()->setPoints(points);
+    getPlayer()->updatePoints(points);
     EXPECT_EQ(points, getPlayer()->getPoints());
 
     unsigned const huevos{ 1 };
-    getPlayer()->setHuevos(huevos);
+    getPlayer()->updateHuevos(huevos);
     EXPECT_EQ(huevos, getPlayer()->getHuevos());
 
     bool const flag{ true };
-    getPlayer()->setFlag(flag);
+    getPlayer()->updateFlag(flag);
     EXPECT_TRUE(getPlayer()->getFlag());
 }
 

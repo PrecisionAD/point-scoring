@@ -10,6 +10,8 @@ public:
 
     int askMenuOption();
     int getTotalPlayers() const;
+    int askOption() const;
+    int askPoints() const;
     void askNames(Game& currentGameIn) const;
 
 private:
