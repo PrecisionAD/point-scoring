@@ -9,9 +9,10 @@ public:
     Input();
 
     int askMenuOption();
-    int getTotalPlayers() const;
-    int askOption() const;
+    int askOption(int totalPlayersIn) const;
     int askPoints() const;
+    int getTotalPlayers() const;
+    int validateInput(std::string& inputIn) const;
     void askNames(Game& currentGameIn) const;
 
 private:

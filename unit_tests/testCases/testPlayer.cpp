@@ -33,7 +33,7 @@ TEST_F(TestPlayer, ConstructPlayerTest)
     // Check default values for player
     ASSERT_EQ(0, getPlayer()->getPoints());
     ASSERT_EQ(0, getPlayer()->getHuevos());
-    EXPECT_FALSE(getPlayer()->getFlag());
+    EXPECT_FALSE(getPlayer()->getUpdated());
 
     std::string john{ "john" };
     getPlayer()->setName(john);
@@ -48,8 +48,8 @@ TEST_F(TestPlayer, ConstructPlayerTest)
     EXPECT_EQ(huevos, getPlayer()->getHuevos());
 
     bool const flag{ true };
-    getPlayer()->updateFlag(flag);
-    EXPECT_TRUE(getPlayer()->getFlag());
+    getPlayer()->updatePlayer(flag);
+    EXPECT_TRUE(getPlayer()->getUpdated());
 }
 
 int main(int argc, char **argv)

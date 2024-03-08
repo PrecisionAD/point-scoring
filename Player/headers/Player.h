@@ -14,19 +14,18 @@ public:
     void setName(std::string& nameIn);
     void updatePoints(int pointsIn);
     void updateHuevos(int huevosIn);
-    void updateFlag(bool flag);
+    void updatePlayer(bool updateIn);
 
     [[nodiscard]] std::string getName() const;
     [[nodiscard]] int getPoints() const;
     [[nodiscard]] int getHuevos() const;
-    bool getFlag() const;
     bool getUpdated() const;
 
 private:
     std::string mName;
     int mPoints;
     int mHuevos;
-    bool mFlag;
+    int mLastPoints;
     bool mUpdated;
 };
 

@@ -18,6 +18,7 @@ int main()
     input.askNames(theGame);
 
     int option{ 0 };
+    int roundPlayed{ 0 };
     bool done{ false };
 
     while (not done)
@@ -26,22 +27,20 @@ int main()
         switch (option)
         {
             case 1:
-                // enter scores
-                theGame.printPlayerNames();
+                // Update players
                 theGame.enterScores();
+                roundPlayed++;
                 // save scores?
-                // print table
-                // print score difference
-                // +1 round played
                 break;
             case 2:
-                // adjust score
+                // Adjust score
                 break;
             case 3:
-                // print the table
+                // Print the table
+                theGame.printScores();
                 break;
             case 4:
-                // end the game
+                // End the game
                 done = true;
                 break;
             default:

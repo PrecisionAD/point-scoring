@@ -9,7 +9,7 @@ class TestGame : public testing::Test
 public:
     TestGame();
 
-    void SetUp();
+    void SetUp() override;
     std::shared_ptr<Game> getGameInstance();
 
 protected:
@@ -43,11 +43,17 @@ void TestGame::SetUp()
     player4.setName(adrian);
     player5.setName(daniel);
 
-    player1.updatePoints(50);
-    player2.updatePoints(25);
-    player3.updatePoints(100);
-    player4.updatePoints(10);
-    player5.updatePoints(75);
+    const int points1{ 50 };
+    const int points2{ 25 };
+    const int points3{ 100 };
+    const int points4{ 10 };
+    const int points5{ 75 };
+
+    player1.updatePoints(points1);
+    player2.updatePoints(points2);
+    player3.updatePoints(points3);
+    player4.updatePoints(points4);
+    player5.updatePoints(points5);
 
     getGameInstance()->addPlayer(player1);
     getGameInstance()->addPlayer(player2);
@@ -87,7 +93,35 @@ TEST_F(TestGame, SortPlayersTest)
 }
 
 
+TEST_F(TestGame, UpdatePlayersTest)
+{
+    EXPECT_FALSE(getGameInstance()->getAllPlayers().at(0).getUpdated());
+    EXPECT_FALSE(getGameInstance()->getAllPlayers().at(1).getUpdated());
+    EXPECT_FALSE(getGameInstance()->getAllPlayers().at(2).getUpdated());
+    EXPECT_FALSE(getGameInstance()->getAllPlayers().at(3).getUpdated());
+    EXPECT_FALSE(getGameInstance()->getAllPlayers().at(4).getUpdated());
 
+    getGameInstance()->getAllPlayers().at(0).updatePlayer(true);
+    getGameInstance()->getAllPlayers().at(2).updatePlayer(true);
+    getGameInstance()->getAllPlayers().at(4).updatePlayer(true);
+
+    EXPECT_TRUE(getGameInstance()->getAllPlayers().at(0).getUpdated());
+    EXPECT_TRUE(getGameInstance()->getAllPlayers().at(2).getUpdated());
+    EXPECT_TRUE(getGameInstance()->getAllPlayers().at(4).getUpdated());
+}
+
+TEST_F(TestGame, ResetPlayersFlagTest)
+{
+    getGameInstance()->getAllPlayers().at(0).updatePlayer(true);
+    getGameInstance()->getAllPlayers().at(2).updatePlayer(true);
+    getGameInstance()->getAllPlayers().at(4).updatePlayer(true);
+
+    getGameInstance()->resetPlayersFlag();
+
+    EXPECT_FALSE(getGameInstance()->getAllPlayers().at(0).getUpdated());
+    EXPECT_FALSE(getGameInstance()->getAllPlayers().at(2).getUpdated());
+    EXPECT_FALSE(getGameInstance()->getAllPlayers().at(4).getUpdated());
+}
 
 
 

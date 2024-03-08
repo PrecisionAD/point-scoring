@@ -14,14 +14,18 @@ public:
     Game(int totalPlayersIn);
 
     // Player related
-    void setMaxPlayers();
     void addPlayer(Player& currentPlayerIn);
     void enterScores();
     int getTotalPlayers() const;
+    void resetPlayersFlag();
+    void sortPlayers();
+
+    // Game related
+    void updateGame();
 
     // Printing details
     void printPlayerNames() const;
-    void printTable();
+    void printScores();
     int menuOption();
     std::vector<Player>& getAllPlayers();
 
