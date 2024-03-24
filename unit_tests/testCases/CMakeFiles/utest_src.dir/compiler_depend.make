@@ -162,6 +162,7 @@ testCases/CMakeFiles/utest_src.dir/testInput.cpp.o: testCases/testInput.cpp \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
   /home/adrian/hobbies/c++/games/point-scoring/Player/headers/Player.h \
+  /home/adrian/hobbies/c++/games/point-scoring/Game/headers/EscapeColors.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -769,6 +770,8 @@ testCases/testPlayer.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
 /usr/include/c++/11/bits/string_view.tcc:
 
 /usr/include/c++/11/bits/functional_hash.h:
@@ -950,12 +953,6 @@ testCases/testPlayer.cpp:
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/stdlib.h:
-
-/usr/include/c++/11/bits/shared_ptr_base.h:
-
-/usr/include/c++/11/bits/basic_string.h:
-
-/home/adrian/hobbies/c++/games/point-scoring/Input/headers/Input.h:
 
 /usr/include/gtest/internal/gtest-port.h:
 
@@ -1183,8 +1180,6 @@ testCases/testInput.cpp:
 
 /usr/include/c++/11/bits/align.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
 /usr/include/c++/11/cstddef:
 
 /usr/include/c++/11/bits/stl_vector.h:
@@ -1198,6 +1193,14 @@ testCases/testInput.cpp:
 /usr/include/c++/11/bits/stl_bvector.h:
 
 /usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/c++/11/bits/shared_ptr_base.h:
+
+/usr/include/c++/11/bits/basic_string.h:
+
+/home/adrian/hobbies/c++/games/point-scoring/Input/headers/Input.h:
+
+/home/adrian/hobbies/c++/games/point-scoring/Game/headers/EscapeColors.h:
 
 /usr/include/c++/11/ostream:
 

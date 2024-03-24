@@ -162,6 +162,7 @@ CMakeFiles/utest.dir/testCases/testGame.cpp.o: testCases/testGame.cpp \
   /usr/include/c++/11/bits/vector.tcc \
   /home/adrian/hobbies/c++/games/point-scoring/Input/headers/Input.h \
   /home/adrian/hobbies/c++/games/point-scoring/Game/headers/Game.h \
+  /home/adrian/hobbies/c++/games/point-scoring/Game/headers/EscapeColors.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -216,11 +217,24 @@ CMakeFiles/utest.dir/testCases/testGame.cpp.o: testCases/testGame.cpp \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/locale \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/c++/11/ctime \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
-  /usr/include/c++/11/bits/unique_ptr.h \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
@@ -257,15 +271,6 @@ CMakeFiles/utest.dir/testCases/testGame.cpp.o: testCases/testGame.cpp \
   /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
-  /usr/include/c++/11/locale \
-  /usr/include/c++/11/bits/locale_facets_nonio.h \
-  /usr/include/c++/11/ctime \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
-  /usr/include/libintl.h \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/gtest/internal/custom/gtest-port.h \
   /usr/include/gtest/internal/gtest-port-arch.h \
   /usr/include/unistd.h \
@@ -305,10 +310,6 @@ CMakeFiles/utest.dir/testCases/testGame.cpp.o: testCases/testGame.cpp \
   /usr/include/x86_64-linux-gnu/bits/sigthread.h \
   /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
-  /usr/include/c++/11/iomanip \
-  /usr/include/c++/11/bits/quoted_string.h \
-  /usr/include/c++/11/sstream \
-  /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
@@ -500,6 +501,7 @@ CMakeFiles/utest.dir/testCases/testInput.cpp.o: testCases/testInput.cpp \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
   /home/adrian/hobbies/c++/games/point-scoring/Player/headers/Player.h \
+  /home/adrian/hobbies/c++/games/point-scoring/Game/headers/EscapeColors.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -1053,8 +1055,6 @@ testCases/testInput.cpp:
 
 /usr/include/c++/11/map:
 
-/usr/include/c++/11/sstream:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
 
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
@@ -1087,10 +1087,6 @@ testCases/testInput.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
-/usr/include/c++/11/bits/quoted_string.h:
-
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
-
 /usr/include/c++/11/bits/parse_numbers.h:
 
 /usr/include/c++/11/variant:
@@ -1111,19 +1107,13 @@ testCases/testInput.cpp:
 
 /usr/include/gtest/internal/custom/gtest-port.h:
 
-/usr/include/c++/11/bits/locale_conv.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
 
-/usr/include/c++/11/bits/locale_facets_nonio.tcc:
+/usr/include/asm-generic/posix_types.h:
 
-/usr/include/libintl.h:
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
-/usr/include/c++/11/cxxabi.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
-
-/usr/include/c++/11/ctime:
+/usr/include/linux/posix_types.h:
 
 /usr/include/stdlib.h:
 
@@ -1161,6 +1151,12 @@ testCases/testInput.cpp:
 
 /usr/include/c++/11/bits/stl_pair.h:
 
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
 /usr/include/pthread.h:
 
 /usr/include/gtest/gtest_prod.h:
@@ -1172,6 +1168,10 @@ testCases/testInput.cpp:
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/usr/include/c++/11/backward/binders.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
@@ -1185,15 +1185,13 @@ testCases/testInput.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
+/usr/include/libintl.h:
+
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/c++/11/backward/binders.h:
-
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
@@ -1215,13 +1213,11 @@ testCases/testInput.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/include/asm-generic/posix_types.h:
+/usr/include/c++/11/ctime:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
 /usr/include/c++/11/bits/postypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
@@ -1264,10 +1260,6 @@ testCases/testInput.cpp:
 /usr/include/x86_64-linux-gnu/sys/wait.h:
 
 /usr/include/asm-generic/errno-base.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
 /usr/include/c++/11/ext/numeric_traits.h:
 
@@ -1429,6 +1421,14 @@ testCases/testGame.cpp:
 
 /usr/include/c++/11/cstdint:
 
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/c++/11/bits/concept_check.h:
+
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/c++/11/bits/stl_iterator.h:
@@ -1537,13 +1537,15 @@ testCases/testGame.cpp:
 
 /usr/include/c++/11/bits/vector.tcc:
 
+/usr/include/gtest/internal/gtest-port.h:
+
 /usr/include/c++/11/bits/shared_ptr_base.h:
 
 /usr/include/c++/11/bits/basic_string.h:
 
 /home/adrian/hobbies/c++/games/point-scoring/Input/headers/Input.h:
 
-/usr/include/gtest/internal/gtest-port.h:
+/home/adrian/hobbies/c++/games/point-scoring/Game/headers/EscapeColors.h:
 
 /usr/include/c++/11/ostream:
 
@@ -1591,6 +1593,12 @@ testCases/testGame.cpp:
 
 /usr/include/c++/11/bits/locale_facets.h:
 
+/usr/include/gtest/gtest-message.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
+
+/usr/include/c++/11/cwctype:
+
 /usr/include/x86_64-linux-gnu/asm/types.h:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
@@ -1627,6 +1635,10 @@ testCases/testGame.cpp:
 
 /usr/include/c++/11/bits/hashtable.h:
 
+/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+
+/usr/include/c++/11/bits/hashtable_policy.h:
+
 /usr/include/c++/11/bits/codecvt.h:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
@@ -1640,6 +1652,22 @@ testCases/testGame.cpp:
 /usr/include/endian.h:
 
 /usr/include/c++/11/bits/erase_if.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
+
+/usr/include/c++/11/cxxabi.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/c++/11/bits/locale_conv.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+
+/usr/include/c++/11/bits/quoted_string.h:
+
+/usr/include/c++/11/sstream:
 
 /usr/include/c++/11/memory:
 
@@ -1664,27 +1692,3 @@ testCases/testGame.cpp:
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
 /usr/include/linux/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/asm-generic/types.h:
-
-/usr/include/c++/11/bits/concept_check.h:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/linux/posix_types.h:
-
-/usr/include/gtest/gtest-message.h:
-
-/usr/include/c++/11/cwctype:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
-/usr/include/c++/11/bits/hashtable_policy.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
-
-/usr/include/c++/11/bits/locale_facets_nonio.h:

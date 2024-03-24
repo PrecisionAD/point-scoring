@@ -163,6 +163,7 @@ testCases/CMakeFiles/utest_src.dir/testInput.cpp.o
  /usr/include/c++/11/bits/stl_bvector.h
  /usr/include/c++/11/bits/vector.tcc
  /home/adrian/hobbies/c++/games/point-scoring/Player/headers/Player.h
+ /home/adrian/hobbies/c++/games/point-scoring/Game/headers/EscapeColors.h
  /usr/include/c++/11/iostream
  /usr/include/c++/11/ostream
  /usr/include/c++/11/ios

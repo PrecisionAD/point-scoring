@@ -28,12 +28,17 @@ void Player::updatePoints(int pointsIn)
 
 void Player::updateHuevos(int huevosIn)
 {
-    mHuevos = huevosIn;
+    mHuevos += huevosIn;
 }
 
 void Player::updatePlayer(bool updateIn)
 {
     mUpdated = updateIn;
+}
+
+void Player::adjustPlayerPoints()
+{
+    mPoints -= mLastPoints;
 }
 
 std::string Player::getName() const
@@ -54,6 +59,11 @@ int Player::getHuevos() const
 bool Player::getUpdated() const
 {
     return mUpdated;
+}
+
+int Player::getLastPoints() const
+{
+    return mLastPoints;
 }
 
 

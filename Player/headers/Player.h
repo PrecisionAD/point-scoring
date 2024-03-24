@@ -15,10 +15,12 @@ public:
     void updatePoints(int pointsIn);
     void updateHuevos(int huevosIn);
     void updatePlayer(bool updateIn);
+    void adjustPlayerPoints();
 
     [[nodiscard]] std::string getName() const;
     [[nodiscard]] int getPoints() const;
     [[nodiscard]] int getHuevos() const;
+    [[nodiscard]] int getLastPoints() const;
     bool getUpdated() const;
 
 private:

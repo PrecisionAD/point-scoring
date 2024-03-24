@@ -34,6 +34,7 @@ int main()
                 break;
             case 2:
                 // Adjust score
+                theGame.adjustScore();
                 break;
             case 3:
                 // Print the table

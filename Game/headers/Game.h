@@ -19,6 +19,7 @@ public:
     int getTotalPlayers() const;
     void resetPlayersFlag();
     void sortPlayers();
+    void adjustScore();
 
     // Game related
     void updateGame();

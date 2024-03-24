@@ -45,6 +45,10 @@ void Game::enterScores()
         {
             std::cout << BOLDYELLOW << "\nThat Player was already updated!\n" << RESET;
         }
+        else
+        {
+            std::cout << "That Player was already updated!\n";
+        }
 
     } while(counter != getTotalPlayers());
 
@@ -74,6 +78,49 @@ void Game::sortPlayers()
             {
                 return player1.getPoints() < player2.getPoints();
             });
+}
+
+void Game::adjustScore()
+{
+    int option{ -1 };
+    std::string input{};
+    Input const theInput{};
+
+    std::cout << "Which player are you adjusting?\n";
+    printPlayerNames();
+    std::cout << "Option: ";
+    std::cin >> input;
+    option = theInput.validateInput(input);
+
+    if (option > -1 and option <= getAllPlayers().size())
+    {
+        std::cout
+            << "\nLast points for "
+            << getAllPlayers().at(option - 1).getName()
+            << " were "
+            << getAllPlayers().at(option - 1).getLastPoints()
+            << " pts\n";
+
+        int newPoints{ -1 };
+        const int maxPoints{ 1000 };
+        std::cout << "New points: ";
+        std::cin >> input;
+        newPoints = theInput.validateInput(input);
+
+        if (newPoints > -1 and newPoints < maxPoints)
+        {
+            getAllPlayers().at(option - 1).adjustPlayerPoints();
+            getAllPlayers().at(option - 1).updatePoints(newPoints);
+        }
+        else
+        {
+            std::cout << "Could not update the points, they were probably too high!\n";
+        }
+    }
+    else
+    {
+        std::cout << "No points were adjusted, check your input!\n";
+    }
 }
 
 void Game::updateGame()
