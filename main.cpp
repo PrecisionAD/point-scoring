@@ -19,18 +19,27 @@ int main()
 
     int option{ 0 };
     int roundPlayed{ 0 };
+    const int totalRounds{ 7 };
     bool done{ false };
+
 
     while (not done)
     {
-        option = theGame.menuOption();
+        if (roundPlayed == totalRounds)
+        {
+            option = 4;
+        }
+        else
+        {
+            option = theGame.menuOption();
+        }
+
         switch (option)
         {
             case 1:
                 // Update players
                 theGame.enterScores();
                 roundPlayed++;
-                // save scores?
                 break;
             case 2:
                 // Adjust score
@@ -41,7 +50,7 @@ int main()
                 theGame.printScores();
                 break;
             case 4:
-                // End the game
+                // End the game and save scores
                 theGame.finalScores();
                 done = true;
                 break;

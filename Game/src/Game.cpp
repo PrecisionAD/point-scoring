@@ -216,8 +216,6 @@ void Game::finalScores()
     std::cout << "\n**************************\n";
     std::cout << "*        GAME ENDED        *\n";
     std::cout << "**************************\n";
-
-    printScores();
 }
 
 std::vector<Player>& Game::getAllPlayers()
