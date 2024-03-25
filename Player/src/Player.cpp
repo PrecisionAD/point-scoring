@@ -24,6 +24,7 @@ void Player::updatePoints(int pointsIn)
 {
     mPoints += pointsIn;
     mLastPoints = pointsIn;
+    mRoundPoints.push_back(pointsIn);
 }
 
 void Player::updateHuevos(int huevosIn)
@@ -64,6 +65,11 @@ bool Player::getUpdated() const
 int Player::getLastPoints() const
 {
     return mLastPoints;
+}
+
+std::vector<unsigned>& Player::getRoundPoints()
+{
+    return mRoundPoints;
 }
 
 

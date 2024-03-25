@@ -86,6 +86,25 @@ TEST_F(TestPlayer, LastPointsTest)
     ASSERT_EQ(points, getPlayer()->getLastPoints());
 }
 
+TEST_F(TestPlayer, RoundPointsTest)
+{
+    unsigned const one{ 1 };
+    unsigned const two{ 2 };
+    unsigned const ten{ 10 };
+    unsigned const fourty{ 40 };
+    unsigned index{ 0 };
+
+    getPlayer()->updatePoints(one);
+    getPlayer()->updatePoints(two);
+    getPlayer()->updatePoints(ten);
+    getPlayer()->updatePoints(fourty);
+
+    for (unsigned const& currentPoints : getPlayer()->getRoundPoints())
+    {
+        ASSERT_EQ(currentPoints, getPlayer()->getRoundPoints().at(index++));
+    }
+}
+
 int main(int argc, char **argv)
 {
     testing::InitGoogleTest(&argc, argv);

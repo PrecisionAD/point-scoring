@@ -5,8 +5,6 @@
 
 #include <vector>
 
-// class Player;
-
 class Game
 {
 public:
@@ -28,6 +26,7 @@ public:
     void printPlayerNames() const;
     void printScores();
     int menuOption();
+    void finalScores();
     std::vector<Player>& getAllPlayers();
 
 private:

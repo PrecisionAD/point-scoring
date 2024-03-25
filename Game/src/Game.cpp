@@ -45,10 +45,6 @@ void Game::enterScores()
         {
             std::cout << BOLDYELLOW << "\nThat Player was already updated!\n" << RESET;
         }
-        else
-        {
-            std::cout << "That Player was already updated!\n";
-        }
 
     } while(counter != getTotalPlayers());
 
@@ -213,6 +209,15 @@ int Game::menuOption()
     }
 
     return option;
+}
+
+void Game::finalScores()
+{
+    std::cout << "\n**************************\n";
+    std::cout << "*        GAME ENDED        *\n";
+    std::cout << "**************************\n";
+
+    printScores();
 }
 
 std::vector<Player>& Game::getAllPlayers()

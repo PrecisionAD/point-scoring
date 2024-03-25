@@ -42,25 +42,13 @@ int main()
                 break;
             case 4:
                 // End the game
+                theGame.finalScores();
                 done = true;
                 break;
             default:
-                std::cout << "???" << "\n";
-                // ???
+                std::cout << "Option not valid\n";
         }
     }
-
-
-
-
-
-    // std::vector<Player> players{ theGame.getAllPlayers() };
-    // int i{ 0 };
-    // for (Player p : players)
-    // {
-    //     std::cout << "player: " << p.getName() << "\n";
-    //     i++;
-    // }
 
     return 0;
 }

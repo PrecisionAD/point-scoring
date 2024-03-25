@@ -22,6 +22,7 @@ public:
     [[nodiscard]] int getHuevos() const;
     [[nodiscard]] int getLastPoints() const;
     bool getUpdated() const;
+    std::vector<unsigned>& getRoundPoints();
 
 private:
     std::string mName;
@@ -29,6 +30,7 @@ private:
     int mHuevos;
     int mLastPoints;
     bool mUpdated;
+    std::vector<unsigned> mRoundPoints;
 };
 
 #endif
