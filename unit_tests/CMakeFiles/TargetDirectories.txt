@@ -1,6 +1,0 @@
-/home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles/utest.dir
-/home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles/edit_cache.dir
-/home/adrian/hobbies/c++/games/point-scoring/unit_tests/CMakeFiles/rebuild_cache.dir
-/home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/CMakeFiles/utest_src.dir
-/home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/CMakeFiles/edit_cache.dir
-/home/adrian/hobbies/c++/games/point-scoring/unit_tests/testCases/CMakeFiles/rebuild_cache.dir

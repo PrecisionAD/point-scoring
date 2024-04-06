@@ -10,18 +10,35 @@ set(CMAKE_BUILD_TYPE Debug)
 # Project name
 project(telefunke)
 
-# Executable
+# Executable for the game
 add_executable(telefunke main.cpp)
 
+find_package(GTest REQUIRED)
+find_package(Threads REQUIRED)
+
+# Executable for unit tests
+add_executable(utest
+    unit_tests/testCases/testInput.cpp
+    unit_tests/testCases/testPlayer.cpp
+    unit_tests/testCases/testGame.cpp
+)
+
+# Link pthread library which is needed by gtest
+target_link_libraries(utest ${GTEST_LIBRARIES}
+    pthread
+    utest_src
+)
+
 # Libraries
-target_link_libraries(telefunke PUBLIC
-    Files
-    Input
-    Game
-    Player
+target_link_libraries(telefunke
+    PRIVATE Files
+    PRIVATE Input
+    PRIVATE Game
+    PRIVATE Player
 )
 
 add_subdirectory(Files)
 add_subdirectory(Game)
 add_subdirectory(Input)
 add_subdirectory(Player)
+add_subdirectory(unit_tests)

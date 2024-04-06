@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/utest.dir/testCases/testInput.cpp.o CMakeFiles/utest.dir/testCases/testPlayer.cpp.o CMakeFiles/utest.dir/testCases/testGame.cpp.o -o utest  /usr/lib/x86_64-linux-gnu/libgtest.a -lpthread testCases/libutest_src.a 
