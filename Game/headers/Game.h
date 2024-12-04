@@ -14,10 +14,10 @@ public:
     // Player related
     void addPlayer(Player& currentPlayerIn);
     void enterScores();
-    int getTotalPlayers() const;
     void resetPlayersFlag();
     void sortPlayers();
     void adjustScore();
+    int getTotalPlayers() const;
 
     // Game related
     void updateGame();
@@ -32,6 +32,7 @@ public:
 private:
     std::vector<Player> mAllPlayers;
     int mTotalPlayers;
+    char table[][16];
 };
 
 #endif

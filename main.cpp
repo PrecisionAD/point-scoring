@@ -1,6 +1,7 @@
 #include "Game/headers/Game.h"
 #include "Input/headers/Input.h"
 #include "Player/headers/Player.h"
+#include "Files/headers/Files.h"
 
 #include <iostream>
 
@@ -12,13 +13,14 @@ int main()
 
     // Create the game
     Game theGame{ totalPlayers };
+    const Files file{ };
 
     // Ask for details
     Input const input{};
     input.askNames(theGame);
 
     int option{ 0 };
-    int roundPlayed{ 0 };
+    unsigned roundPlayed{ 0 };
     const int totalRounds{ 7 };
     bool done{ false };
 
@@ -52,7 +54,12 @@ int main()
             case 4:
                 // End the game and save scores
                 theGame.finalScores();
+                file.saveToFile(theGame, roundPlayed);
                 done = true;
+                break;
+            case 5:
+                // test printing player scores
+                theGame.getAllPlayers().at(0).printPlayerScores();
                 break;
             default:
                 std::cout << "Option not valid\n";

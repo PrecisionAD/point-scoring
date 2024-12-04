@@ -51,11 +51,6 @@ void Game::enterScores()
     updateGame();
 }
 
-int Game::getTotalPlayers() const
-{
-    return mTotalPlayers;
-}
-
 void Game::resetPlayersFlag()
 {
     for (Player& currentPlayer : getAllPlayers())
@@ -117,6 +112,11 @@ void Game::adjustScore()
     {
         std::cout << "No points were adjusted, check your input!\n";
     }
+}
+
+int Game::getTotalPlayers() const
+{
+    return mTotalPlayers;
 }
 
 void Game::updateGame()
@@ -185,6 +185,7 @@ int Game::menuOption()
     std::cout << "2) Adjust a score" << "\n";
     std::cout << "3) Print the table" << "\n";
     std::cout << "4) End the game" << "\n";
+    std::cout << "5) Print player scores" << "\n";
 
     int option{ 0 };
     bool done{ false };
@@ -197,7 +198,7 @@ int Game::menuOption()
         std::cin >> input;
         option = theInput.validateInput(input);
 
-        if (option < 1 or option > 4)
+        if (option < 1 or option > 5)
         {
             std::cout << BOLDYELLOW << "Opps! That's not valid! Try again?\n" << RESET;
         }

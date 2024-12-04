@@ -16,6 +16,7 @@ public:
     void updateHuevos(int huevosIn);
     void updatePlayer(bool updateIn);
     void adjustPlayerPoints();
+    void printPlayerScores() const;
 
     [[nodiscard]] std::string getName() const;
     [[nodiscard]] int getPoints() const;

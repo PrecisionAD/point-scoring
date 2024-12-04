@@ -1,6 +1,8 @@
 #include "../headers/Player.h"
 // #include <Player/Player.h>
 
+#include <iostream>
+
 Player::Player() :
     mPoints{ 0 },
     mHuevos{ 0 },
@@ -41,6 +43,15 @@ void Player::updatePlayer(bool updateIn)
 void Player::adjustPlayerPoints()
 {
     mPoints -= mLastPoints;
+}
+
+void Player::printPlayerScores() const
+{
+    std::cout << "Points: ";
+    for (const auto& currentPoints : mRoundPoints)
+    {
+        std::cout << currentPoints << " ";
+    }
 }
 
 std::string Player::getName() const
