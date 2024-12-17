@@ -5,7 +5,7 @@ add_library(Game
 
 # Add headers
 target_include_directories(Game
-    PRIVATE headers
+    PUBLIC headers
 )
 
 # Link libraries

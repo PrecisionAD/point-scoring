@@ -5,7 +5,7 @@ add_library(Files
 
 # Add headers
 target_include_directories(Files
-    PRIVATE headers
+    PUBLIC headers
 )
 
 # Link libraries

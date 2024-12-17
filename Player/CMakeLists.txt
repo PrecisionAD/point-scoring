@@ -5,7 +5,7 @@ add_library(Player
 
 # Add headers
 target_include_directories(Player
-    PRIVATE headers
+    PUBLIC headers
 )
 
 target_link_libraries(Player

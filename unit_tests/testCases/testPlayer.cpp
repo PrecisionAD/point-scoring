@@ -1,4 +1,4 @@
-#include "../../Player/src/Player.cpp"
+#include "../../Player/headers/Player.h"
 
 #include <gtest/gtest.h>
 

@@ -1,4 +1,4 @@
-#include "../../Game/src/Game.cpp"
+#include "../../Game/headers/Game.h"
 
 #include <memory>
 

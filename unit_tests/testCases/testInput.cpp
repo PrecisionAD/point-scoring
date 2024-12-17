@@ -1,4 +1,4 @@
-#include "../../Input/src/Input.cpp"
+#include "../../Input/headers/Input.h"
 
 #include <gtest/gtest.h>
 

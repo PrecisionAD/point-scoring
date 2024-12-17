@@ -13,6 +13,27 @@ project(telefunke)
 # Executable for the game
 add_executable(telefunke main.cpp)
 
+# Search for gtest
+if(APPLE)
+    set(GTEST_INCLUDE_DIR "/usr/local/Cellar/googleteest/1.15.2/include")
+    set(GTEST_LIB_DIR "/usr/local/Cellar/googleteest/1.15.2/lib")
+elseif(UNIX)
+    set(GTEST_INCLUDE_DIR "/usr/include/gtest")
+    set(GTEST_LIB_DIR "/usr/lib")
+else()
+    message(FATAL_ERROR "Unsupported platform!")
+endif()
+
+# Add include directory for Google Test
+include_directories(${GTEST_INCLUDE_DIR})
+include_directories(
+    ${CMAKE_SOURCE_DIR}/headers
+    ${CMAKE_SOURCE_DIR}/Player/headers
+    ${CMAKE_SOURCE_DIR}/Game/headers
+    ${CMAKE_SOURCE_DIR}/Input/headers
+    ${CMAKE_SOURCE_DIR}/Files/headers
+)
+
 find_package(GTest REQUIRED)
 find_package(Threads REQUIRED)
 
@@ -30,7 +51,7 @@ target_link_libraries(utest ${GTEST_LIBRARIES}
 )
 
 # Libraries
-target_link_libraries(telefunke
+target_link_libraries(telefunke PRIVATE
     PRIVATE Files
     PRIVATE Input
     PRIVATE Game
